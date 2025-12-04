@@ -1,364 +1,363 @@
-import React from 'react';
-import { CheckCircle, ShieldCheck, Leaf, Sun, AlertCircle, Heart, Star, Droplet, Users, ArrowRight } from 'lucide-react';
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>眠くならない花粉対策｜ツルアラメ機能性表示食品</title>
+    <meta name="description" content="眠くならない花粉対策で、仕事も家事も止めない。日本海の海藻「ツルアラメ」だけでつくった、働くママのための機能性表示食品。">
+    
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Noto Sans JP) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 
-const App = () => {
-  return (
-    <div className="font-sans text-slate-700 bg-white leading-relaxed">
-      
-      {/* ■ Header / Hero Section */}
-      <header className="relative bg-gradient-to-r from-teal-700 to-teal-900 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-        <div className="container mx-auto px-4 py-16 md:py-24 relative z-10 flex flex-col items-center text-center">
-          <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm md:text-base font-bold mb-6 border border-white/20 inline-block">
-            西ノ島産ツルアラメ由来・機能性表示食品
-          </div>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            <span className="block text-yellow-300 mb-2 drop-shadow-md">眠くならない花粉対策で、</span>
-            仕事も家事も止めない。
-          </h1>
-          <p className="text-lg md:text-xl text-teal-50 mb-10 max-w-2xl mx-auto">
-            働くママのリアルな毎日に。<br className="md:hidden" />自然由来で、家族みんなが笑顔になれる新しい選択肢。
-          </p>
-          <a href="#cta" className="bg-orange-500 hover:bg-orange-600 text-white text-lg md:text-xl font-bold py-4 px-10 rounded-full shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl flex items-center gap-2">
-            今すぐ試してみる <ArrowRight size={20} />
-          </a>
-        </div>
-        {/* Wave Shape Divider */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180">
-          <svg className="relative block w-[calc(100%+1.3px)] h-[50px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-white"></path>
-          </svg>
-        </div>
-      </header>
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        /* スムーズスクロール */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-700">
+    <div id="root"></div>
 
-      {/* ■ 1. 【認識】Empathy Section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-teal-800 mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-orange-400">
-            このような毎日、ありませんか？
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100">
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <AlertCircle className="text-orange-500 shrink-0 mt-1" />
-                  <span>朝から目がかゆい。鼻がムズムズして止まらない。</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <AlertCircle className="text-orange-500 shrink-0 mt-1" />
-                  <span>仕事に集中したいのに、頭がぼんやりしてしまう。</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <AlertCircle className="text-orange-500 shrink-0 mt-1" />
-                  <span>家事や子どもの支度も、思うように進まない。</span>
-                </li>
-              </ul>
-            </div>
-            <div className="bg-teal-50 p-8 rounded-2xl md:rounded-tr-[50px] md:rounded-bl-[50px]">
-              <p className="text-lg font-bold text-teal-900 mb-4">
-                「薬が効くのはわかってる。<br/>でも、<span className="text-red-500 underline decoration-wavy">眠気</span>が出てしまう…」
-              </p>
-              <p className="text-slate-600 mb-4">
-                「子どもと同じタイミングで飲めるものがほしい…」
-              </p>
-              <p className="text-sm text-slate-500 leading-relaxed">
-                そんな “働くママのリアルな毎日” に寄り添うために、
-                自然由来で眠くならない新しい花粉対策をつくりました。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- React Application Script -->
+    <script type="module">
+        import React from 'https://esm.sh/react@18.2.0';
+        import { createRoot } from 'https://esm.sh/react-dom@18.2.0/client';
+        // アイコンライブラリ Lucide-React の読み込み
+        import { 
+            CheckCircle, ShieldCheck, Leaf, Sun, AlertCircle, Heart, Star, Droplet, Users, ArrowRight 
+        } from 'https://esm.sh/lucide-react@0.263.1';
 
-      {/* ■ 2. 【解説】Solution & Science */}
-      <section className="py-16 md:py-24 bg-teal-50 relative">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-16">
-            <span className="text-teal-600 font-bold tracking-widest text-sm uppercase">About Tsuruarame</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mt-2">
-              自然なのに<br className="md:hidden" />“しっかり実感できる”理由
-            </h2>
-          </div>
+        const App = () => {
+            return React.createElement(
+                'div',
+                { className: "font-sans text-slate-700 bg-white leading-relaxed" },
+                
+                // ■ Header / Hero Section
+                React.createElement('header', { className: "relative bg-gradient-to-r from-teal-700 to-teal-900 text-white overflow-hidden" },
+                    React.createElement('div', { className: "absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]" }),
+                    React.createElement('div', { className: "container mx-auto px-4 py-16 md:py-24 relative z-10 flex flex-col items-center text-center" },
+                        React.createElement('div', { className: "bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm md:text-base font-bold mb-6 border border-white/20 inline-block" },
+                            "西ノ島産ツルアラメ由来・機能性表示食品"
+                        ),
+                        React.createElement('h1', { className: "text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6" },
+                            React.createElement('span', { className: "block text-yellow-300 mb-2 drop-shadow-md" }, "眠くならない花粉対策で、"),
+                            "仕事も家事も止めない。"
+                        ),
+                        React.createElement('p', { className: "text-lg md:text-xl text-teal-50 mb-10 max-w-2xl mx-auto" },
+                            "働くママのリアルな毎日に。",
+                            React.createElement('br', { className: "md:hidden" }),
+                            "自然由来で、家族みんなが笑顔になれる新しい選択肢。"
+                        ),
+                        React.createElement('a', { 
+                            href: "#cta", 
+                            className: "bg-orange-500 hover:bg-orange-600 text-white text-lg md:text-xl font-bold py-4 px-10 rounded-full shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl flex items-center gap-2" 
+                        },
+                            "今すぐ試してみる",
+                            React.createElement(ArrowRight, { size: 20 })
+                        )
+                    ),
+                    // Wave Shape Divider
+                    React.createElement('div', { className: "absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180" },
+                        React.createElement('svg', { 
+                            className: "relative block w-[calc(100%+1.3px)] h-[50px] md:h-[100px]", 
+                            "data-name": "Layer 1", 
+                            xmlns: "http://www.w3.org/2000/svg", 
+                            viewBox: "0 0 1200 120", 
+                            preserveAspectRatio: "none" 
+                        },
+                            React.createElement('path', { 
+                                d: "M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z", 
+                                className: "fill-white" 
+                            })
+                        )
+                    )
+                ),
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="relative h-64 md:h-full bg-teal-800 rounded-2xl overflow-hidden flex items-center justify-center text-white">
-              {/* Image Placeholder */}
-              <div className="text-center p-6">
-                <Leaf size={64} className="mx-auto mb-4 opacity-80" />
-                <p className="text-xl font-bold">日本海の至宝<br/>「ツルアラメ」</p>
-                <p className="text-sm opacity-70 mt-2">画像イメージ：荒波にもまれる海藻</p>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-teal-800 mb-4">
-                日本海の海藻「ツルアラメ」だけでつくった、<br/>機能性表示食品。
-              </h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                「ツルアラメ」は、日本海沿岸に生息する褐藻。一般的なサプリ素材（乳酸菌・甜茶・ビタミンなど）とは全く異なる、<strong className="text-teal-700 bg-teal-100 px-1">“海藻ポリフェノール”が豊富な素材</strong>です。
-              </p>
-              <div className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-teal-500 mb-6">
-                <h4 className="font-bold text-lg mb-2 flex items-center gap-2">
-                  <span className="text-teal-600">★</span> 注目成分：フロロタンニン
-                </h4>
-                <p className="text-sm text-slate-600">
-                  この成分が<strong className="text-slate-800">花粉やハウスダストによる目・鼻の不快感</strong>に働きかけることが研究で確認されています。
-                </p>
-              </div>
-              <ul className="space-y-2 text-sm font-bold text-teal-800">
-                <li className="flex items-center gap-2"><CheckCircle size={18} className="text-green-500"/> ツルアラメ100%</li>
-                <li className="flex items-center gap-2"><CheckCircle size={18} className="text-green-500"/> 添加物不使用</li>
-                <li className="flex items-center gap-2"><CheckCircle size={18} className="text-green-500"/> 植物性カプセル採用（タピオカ由来）</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+                // ■ 1. 【認識】Empathy Section
+                React.createElement('section', { className: "py-16 md:py-24 bg-white" },
+                    React.createElement('div', { className: "container mx-auto px-4 max-w-4xl" },
+                        React.createElement('h2', { className: "text-2xl md:text-3xl font-bold text-center text-teal-800 mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-orange-400" },
+                            "このような毎日、ありませんか？"
+                        ),
+                        React.createElement('div', { className: "grid md:grid-cols-2 gap-8 items-center" },
+                            React.createElement('div', { className: "bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100" },
+                                React.createElement('ul', { className: "space-y-4" },
+                                    React.createElement('li', { className: "flex items-start gap-3" },
+                                        React.createElement(AlertCircle, { className: "text-orange-500 shrink-0 mt-1" }),
+                                        React.createElement('span', null, "朝から目がかゆい。鼻がムズムズして止まらない。")
+                                    ),
+                                    React.createElement('li', { className: "flex items-start gap-3" },
+                                        React.createElement(AlertCircle, { className: "text-orange-500 shrink-0 mt-1" }),
+                                        React.createElement('span', null, "仕事に集中したいのに、頭がぼんやりしてしまう。")
+                                    ),
+                                    React.createElement('li', { className: "flex items-start gap-3" },
+                                        React.createElement(AlertCircle, { className: "text-orange-500 shrink-0 mt-1" }),
+                                        React.createElement('span', null, "家事や子どもの支度も、思うように進まない。")
+                                    )
+                                )
+                            ),
+                            React.createElement('div', { className: "bg-teal-50 p-8 rounded-2xl md:rounded-tr-[50px] md:rounded-bl-[50px]" },
+                                React.createElement('p', { className: "text-lg font-bold text-teal-900 mb-4" },
+                                    "「薬が効くのはわかってる。", React.createElement('br'), "でも、",
+                                    React.createElement('span', { className: "text-red-500 underline decoration-wavy" }, "眠気"),
+                                    "が出てしまう…」"
+                                ),
+                                React.createElement('p', { className: "text-slate-600 mb-4" }, "「子どもと同じタイミングで飲めるものがほしい…」"),
+                                React.createElement('p', { className: "text-sm text-slate-500 leading-relaxed" },
+                                    "そんな “働くママのリアルな毎日” に寄り添うために、 自然由来で眠くならない新しい花粉対策をつくりました。"
+                                )
+                            )
+                        )
+                    )
+                ),
 
-      {/* ■ 3. 【声】Testimonials */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-teal-800 mb-12">
-            実際に使った方の声
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-slate-50 p-6 rounded-xl relative shadow-sm hover:shadow-md transition">
-              <div className="absolute -top-3 -left-3 bg-orange-400 text-white p-2 rounded-full">
-                <Users size={20} />
-              </div>
-              <p className="font-bold text-slate-800 mb-3 text-lg">「薬の眠気で仕事がつらかったけど、今年はだいぶラクです」</p>
-              <div className="flex text-yellow-400 mb-2">
-                <Star size={16} fill="currentColor" /><Star size={16} fill="currentColor" /><Star size={16} fill="currentColor" /><Star size={16} fill="currentColor" /><Star size={16} fill="currentColor" />
-              </div>
-              <p className="text-sm text-slate-500">30代 女性 / 会社員</p>
-            </div>
-            <div className="bg-slate-50 p-6 rounded-xl relative shadow-sm hover:shadow-md transition">
-              <div className="absolute -top-3 -left-3 bg-teal-500 text-white p-2 rounded-full">
-                <Heart size={20} />
-              </div>
-              <p className="font-bold text-slate-800 mb-3 text-lg">「子どもと一緒に飲めるのが安心。家族全員で助かっています」</p>
-              <div className="flex text-yellow-400 mb-2">
-                <Star size={16} fill="currentColor" /><Star size={16} fill="currentColor" /><Star size={16} fill="currentColor" /><Star size={16} fill="currentColor" /><Star size={16} fill="currentColor" />
-              </div>
-              <p className="text-sm text-slate-500">40代 女性 / 主婦</p>
-            </div>
-            <div className="bg-slate-50 p-6 rounded-xl shadow-sm">
-              <p className="text-slate-700 mb-2">「朝の鼻の不快感が軽く、イライラが減りました」</p>
-            </div>
-            <div className="bg-slate-50 p-6 rounded-xl shadow-sm">
-              <p className="text-slate-700 mb-2">「妊娠中でも飲めて良かった。副作用を心配せずに使えました」</p>
-            </div>
-          </div>
-          <p className="text-center text-xs text-slate-400 mt-6">※個人の感想であり、効果を保証するものではありません。</p>
-        </div>
-      </section>
+                // ■ 2. 【解説】Solution & Science
+                React.createElement('section', { className: "py-16 md:py-24 bg-teal-50 relative" },
+                    React.createElement('div', { className: "container mx-auto px-4 max-w-5xl" },
+                        React.createElement('div', { className: "text-center mb-16" },
+                            React.createElement('span', { className: "text-teal-600 font-bold tracking-widest text-sm uppercase" }, "About Tsuruarame"),
+                            React.createElement('h2', { className: "text-3xl md:text-4xl font-bold text-slate-800 mt-2" },
+                                "自然なのに", React.createElement('br', { className: "md:hidden" }), "“しっかり実感できる”理由"
+                            )
+                        ),
+                        React.createElement('div', { className: "grid md:grid-cols-2 gap-12 items-center mb-16" },
+                            React.createElement('div', { className: "relative h-64 md:h-full bg-teal-800 rounded-2xl overflow-hidden flex items-center justify-center text-white" },
+                                React.createElement('div', { className: "text-center p-6" },
+                                    React.createElement(Leaf, { size: 64, className: "mx-auto mb-4 opacity-80" }),
+                                    React.createElement('p', { className: "text-xl font-bold" }, "日本海の至宝", React.createElement('br'), "「ツルアラメ」"),
+                                    React.createElement('p', { className: "text-sm opacity-70 mt-2" }, "画像イメージ：荒波にもまれる海藻")
+                                )
+                            ),
+                            React.createElement('div', null,
+                                React.createElement('h3', { className: "text-2xl font-bold text-teal-800 mb-4" },
+                                    "日本海の海藻「ツルアラメ」だけでつくった、", React.createElement('br'), "機能性表示食品。"
+                                ),
+                                React.createElement('p', { className: "text-slate-600 mb-6 leading-relaxed" },
+                                    "「ツルアラメ」は、日本海沿岸に生息する褐藻。一般的なサプリ素材（乳酸菌・甜茶・ビタミンなど）とは全く異なる、",
+                                    React.createElement('strong', { className: "text-teal-700 bg-teal-100 px-1" }, "“海藻ポリフェノール”が豊富な素材"),
+                                    "です。"
+                                ),
+                                React.createElement('div', { className: "bg-white p-6 rounded-xl shadow-sm border-l-4 border-teal-500 mb-6" },
+                                    React.createElement('h4', { className: "font-bold text-lg mb-2 flex items-center gap-2" },
+                                        React.createElement('span', { className: "text-teal-600" }, "★"), " 注目成分：フロロタンニン"
+                                    ),
+                                    React.createElement('p', { className: "text-sm text-slate-600" },
+                                        "この成分が", React.createElement('strong', { className: "text-slate-800" }, "花粉やハウスダストによる目・鼻の不快感"), "に働きかけることが研究で確認されています。"
+                                    )
+                                ),
+                                React.createElement('ul', { className: "space-y-2 text-sm font-bold text-teal-800" },
+                                    React.createElement('li', { className: "flex items-center gap-2" }, React.createElement(CheckCircle, { size: 18, className: "text-green-500" }), " ツルアラメ100%"),
+                                    React.createElement('li', { className: "flex items-center gap-2" }, React.createElement(CheckCircle, { size: 18, className: "text-green-500" }), " 添加物不使用"),
+                                    React.createElement('li', { className: "flex items-center gap-2" }, React.createElement(CheckCircle, { size: 18, className: "text-green-500" }), " 植物性カプセル採用（タピオカ由来）")
+                                )
+                            )
+                        )
+                    )
+                ),
 
-      {/* ■ 4. 【実証データ】Scientific Evidence */}
-      <section className="py-16 bg-slate-100">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-teal-900">
-              “効く理由”が科学で証明されています。
-            </h2>
-            <p className="text-teal-700 mt-2">自然 × 科学 のハイブリッド対策</p>
-          </div>
+                // ■ 3. 【声】Testimonials
+                React.createElement('section', { className: "py-16 md:py-24 bg-white" },
+                    React.createElement('div', { className: "container mx-auto px-4 max-w-4xl" },
+                        React.createElement('h2', { className: "text-2xl md:text-3xl font-bold text-center text-teal-800 mb-12" }, "実際に使った方の声"),
+                        React.createElement('div', { className: "grid md:grid-cols-2 gap-6" },
+                            // Voice 1
+                            React.createElement('div', { className: "bg-slate-50 p-6 rounded-xl relative shadow-sm hover:shadow-md transition" },
+                                React.createElement('div', { className: "absolute -top-3 -left-3 bg-orange-400 text-white p-2 rounded-full" }, React.createElement(Users, { size: 20 })),
+                                React.createElement('p', { className: "font-bold text-slate-800 mb-3 text-lg" }, "「薬の眠気で仕事がつらかったけど、今年はだいぶラクです」"),
+                                React.createElement('div', { className: "flex text-yellow-400 mb-2" },
+                                    [...Array(5)].map((_, i) => React.createElement(Star, { key: i, size: 16, fill: "currentColor" }))
+                                ),
+                                React.createElement('p', { className: "text-sm text-slate-500" }, "30代 女性 / 会社員")
+                            ),
+                            // Voice 2
+                            React.createElement('div', { className: "bg-slate-50 p-6 rounded-xl relative shadow-sm hover:shadow-md transition" },
+                                React.createElement('div', { className: "absolute -top-3 -left-3 bg-teal-500 text-white p-2 rounded-full" }, React.createElement(Heart, { size: 20 })),
+                                React.createElement('p', { className: "font-bold text-slate-800 mb-3 text-lg" }, "「子どもと一緒に飲めるのが安心。家族全員で助かっています」"),
+                                React.createElement('div', { className: "flex text-yellow-400 mb-2" },
+                                    [...Array(5)].map((_, i) => React.createElement(Star, { key: i, size: 16, fill: "currentColor" }))
+                                ),
+                                React.createElement('p', { className: "text-sm text-slate-500" }, "40代 女性 / 主婦")
+                            ),
+                            // Voice 3
+                            React.createElement('div', { className: "bg-slate-50 p-6 rounded-xl shadow-sm" },
+                                React.createElement('p', { className: "text-slate-700 mb-2" }, "「朝の鼻の不快感が軽く、イライラが減りました」")
+                            ),
+                            // Voice 4
+                            React.createElement('div', { className: "bg-slate-50 p-6 rounded-xl shadow-sm" },
+                                React.createElement('p', { className: "text-slate-700 mb-2" }, "「妊娠中でも飲めて良かった。副作用を心配せずに使えました」")
+                            )
+                        ),
+                        React.createElement('p', { className: "text-center text-xs text-slate-400 mt-6" }, "※個人の感想であり、効果を保証するものではありません。")
+                    )
+                ),
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center border-t-4 border-teal-500">
-              <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4 text-teal-600">
-                <ShieldCheck size={24} />
-              </div>
-              <h3 className="font-bold mb-2">機能性表示食品</h3>
-              <p className="text-sm text-slate-600">花粉・ホコリ・ハウスダストによる目や鼻の不快感を軽減</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center border-t-4 border-teal-500">
-              <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4 text-teal-600">
-                <Leaf size={24} />
-              </div>
-              <h3 className="font-bold mb-2">西ノ島産限定</h3>
-              <p className="text-sm text-slate-600">産地から製造までトレーサブルな原料を使用</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center border-t-4 border-teal-500">
-              <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4 text-teal-600">
-                <Droplet size={24} />
-              </div>
-              <h3 className="font-bold mb-2">臨床データ保有</h3>
-              <p className="text-sm text-slate-600">自然素材でありながら科学的に裏付けられた希少素材</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center border-t-4 border-teal-500">
-              <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4 text-teal-600">
-                <CheckCircle size={24} />
-              </div>
-              <h3 className="font-bold mb-2">国内GMP工場</h3>
-              <p className="text-sm text-slate-600">品質管理が徹底された安心の国内生産</p>
-            </div>
-          </div>
-        </div>
-      </section>
+                // ■ 4. 【実証データ】Scientific Evidence
+                React.createElement('section', { className: "py-16 bg-slate-100" },
+                    React.createElement('div', { className: "container mx-auto px-4 max-w-5xl" },
+                        React.createElement('div', { className: "text-center mb-12" },
+                            React.createElement('h2', { className: "text-2xl md:text-3xl font-bold text-teal-900" }, "“効く理由”が科学で証明されています。"),
+                            React.createElement('p', { className: "text-teal-700 mt-2" }, "自然 × 科学 のハイブリッド対策")
+                        ),
+                        React.createElement('div', { className: "grid sm:grid-cols-2 lg:grid-cols-4 gap-4" },
+                            // Items
+                            [
+                                { Icon: ShieldCheck, title: "機能性表示食品", desc: "花粉・ホコリ・ハウスダストによる目や鼻の不快感を軽減" },
+                                { Icon: Leaf, title: "西ノ島産限定", desc: "産地から製造までトレーサブルな原料を使用" },
+                                { Icon: Droplet, title: "臨床データ保有", desc: "自然素材でありながら科学的に裏付けられた希少素材" },
+                                { Icon: CheckCircle, title: "国内GMP工場", desc: "品質管理が徹底された安心の国内生産" }
+                            ].map((item, idx) => 
+                                React.createElement('div', { key: idx, className: "bg-white p-6 rounded-lg shadow-sm text-center border-t-4 border-teal-500" },
+                                    React.createElement('div', { className: "w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4 text-teal-600" },
+                                        React.createElement(item.Icon, { size: 24 })
+                                    ),
+                                    React.createElement('h3', { className: "font-bold mb-2" }, item.title),
+                                    React.createElement('p', { className: "text-sm text-slate-600" }, item.desc)
+                                )
+                            )
+                        )
+                    )
+                ),
 
-      {/* ■ 5. 【結果】Benefits */}
-      <section className="py-16 md:py-24 relative overflow-hidden">
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-white"></div>
-        
-        <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <h2 className="text-2xl md:text-4xl font-bold text-center text-teal-900 mb-12">
-            仕事も家事も、止めない毎日へ。
-          </h2>
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-orange-100">
-            <ul className="grid gap-6">
-              {[
-                "朝のムズムズが減り、仕事の集中力が戻る",
-                "子どもの支度・家事がサクサク進む",
-                "眠気がないから、運転・会議・接客でも安心",
-                "家族みんなで使える安心感",
-                "薬との併用もでき、日中のパフォーマンスを落とさない"
-              ].map((item, index) => (
-                <li key={index} className="flex items-start gap-4">
-                  <div className="bg-orange-100 text-orange-500 rounded-full p-1 mt-0.5">
-                    <CheckCircle size={20} />
-                  </div>
-                  <span className="text-lg text-slate-700 font-medium">{item}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-10 p-6 bg-teal-900 rounded-xl text-center text-white">
-              <p className="text-lg">“この時期は仕方ない” と思っていた毎日に、<br/>ツルアラメが「新しい選択肢」を届けます。</p>
-            </div>
-          </div>
-        </div>
-      </section>
+                // ■ 5. 【結果】Benefits
+                React.createElement('section', { className: "py-16 md:py-24 relative overflow-hidden" },
+                    React.createElement('div', { className: "absolute inset-0 bg-gradient-to-br from-orange-50 to-white" }),
+                    React.createElement('div', { className: "container mx-auto px-4 max-w-4xl relative z-10" },
+                        React.createElement('h2', { className: "text-2xl md:text-4xl font-bold text-center text-teal-900 mb-12" }, "仕事も家事も、止めない毎日へ。"),
+                        React.createElement('div', { className: "bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-orange-100" },
+                            React.createElement('ul', { className: "grid gap-6" },
+                                [
+                                    "朝のムズムズが減り、仕事の集中力が戻る",
+                                    "子どもの支度・家事がサクサク進む",
+                                    "眠気がないから、運転・会議・接客でも安心",
+                                    "家族みんなで使える安心感",
+                                    "薬との併用もでき、日中のパフォーマンスを落とさない"
+                                ].map((text, idx) => 
+                                    React.createElement('li', { key: idx, className: "flex items-start gap-4" },
+                                        React.createElement('div', { className: "bg-orange-100 text-orange-500 rounded-full p-1 mt-0.5" },
+                                            React.createElement(CheckCircle, { size: 20 })
+                                        ),
+                                        React.createElement('span', { className: "text-lg text-slate-700 font-medium" }, text)
+                                    )
+                                )
+                            ),
+                            React.createElement('div', { className: "mt-10 p-6 bg-teal-900 rounded-xl text-center text-white" },
+                                React.createElement('p', { className: "text-lg" }, "“この時期は仕方ない” と思っていた毎日に、", React.createElement('br'), "ツルアラメが「新しい選択肢」を届けます。")
+                            )
+                        )
+                    )
+                ),
 
-      {/* ■ 6. 【独自性】USP */}
-      <section className="py-16 bg-teal-800 text-white">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8">
-            ツルアラメの花粉ケアは<span className="text-yellow-400 text-4xl align-middle mx-2">“日本で唯一”</span>
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8 text-left">
-            <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-              <h3 className="font-bold text-xl mb-3 text-yellow-300">希少な海藻ポリフェノール</h3>
-              <p className="leading-relaxed">他の乳酸菌・甜茶・ビタミン系とは全く異なるメカニズム。自然派でありながら科学エビデンスがある唯一の素材です。</p>
-            </div>
-            <div className="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-              <h3 className="font-bold text-xl mb-3 text-yellow-300">限定された独占領域</h3>
-              <p className="leading-relaxed">原料供給が限定されており、ツルアラメ由来の機能性表示サプリは日本でこれだけです。</p>
-            </div>
-          </div>
-        </div>
-      </section>
+                // ■ 6. 【独自性】USP
+                React.createElement('section', { className: "py-16 bg-teal-800 text-white" },
+                    React.createElement('div', { className: "container mx-auto px-4 max-w-4xl text-center" },
+                        React.createElement('h2', { className: "text-2xl md:text-3xl font-bold mb-8" },
+                            "ツルアラメの花粉ケアは",
+                            React.createElement('span', { className: "text-yellow-400 text-4xl align-middle mx-2" }, "“日本で唯一”")
+                        ),
+                        React.createElement('div', { className: "grid md:grid-cols-2 gap-8 text-left" },
+                            React.createElement('div', { className: "bg-white/10 p-6 rounded-lg backdrop-blur-sm" },
+                                React.createElement('h3', { className: "font-bold text-xl mb-3 text-yellow-300" }, "希少な海藻ポリフェノール"),
+                                React.createElement('p', { className: "leading-relaxed" }, "他の乳酸菌・甜茶・ビタミン系とは全く異なるメカニズム。自然派でありながら科学エビデンスがある唯一の素材です。")
+                            ),
+                            React.createElement('div', { className: "bg-white/10 p-6 rounded-lg backdrop-blur-sm" },
+                                React.createElement('h3', { className: "font-bold text-xl mb-3 text-yellow-300" }, "限定された独占領域"),
+                                React.createElement('p', { className: "leading-relaxed" }, "原料供給が限定されており、ツルアラメ由来の機能性表示サプリは日本でこれだけです。")
+                            )
+                        )
+                    )
+                ),
 
-      {/* ■ 7-9. 【単純性・母性・安心】 Features Grid */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid md:grid-cols-3 gap-8">
-            
-            {/* Simple */}
-            <div className="text-center px-4">
-              <div className="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Sun size={32} />
-              </div>
-              <h3 className="text-xl font-bold text-teal-900 mb-4">1日2粒のシンプル習慣</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                朝・夜いつでもOK。小粒で飲みやすいから、忙しいママでも続けやすい。ボトル1つで家族みんなが使えます。
-              </p>
-            </div>
+                // ■ 7-9. 【単純性・母性・安心】 Features Grid
+                React.createElement('section', { className: "py-16 md:py-24 bg-white" },
+                    React.createElement('div', { className: "container mx-auto px-4 max-w-6xl" },
+                        React.createElement('div', { className: "grid md:grid-cols-3 gap-8" },
+                            // Simple
+                            React.createElement('div', { className: "text-center px-4" },
+                                React.createElement('div', { className: "w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-6" }, React.createElement(Sun, { size: 32 })),
+                                React.createElement('h3', { className: "text-xl font-bold text-teal-900 mb-4" }, "1日2粒のシンプル習慣"),
+                                React.createElement('p', { className: "text-slate-600 text-sm leading-relaxed" }, "朝・夜いつでもOK。小粒で飲みやすいから、忙しいママでも続けやすい。ボトル1つで家族みんなが使えます。")
+                            ),
+                            // Motherhood/Safety
+                            React.createElement('div', { className: "text-center px-4 border-l border-r border-slate-100 md:border-x-0" },
+                                React.createElement('div', { className: "w-16 h-16 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center mx-auto mb-6" }, React.createElement(Heart, { size: 32 })),
+                                React.createElement('h3', { className: "text-xl font-bold text-teal-900 mb-4" }, "家族に安心して使える"),
+                                React.createElement('p', { className: "text-slate-600 text-sm leading-relaxed" }, "添加物ゼロ・植物性カプセル。妊娠中・授乳中でも安心。「大切な家族に使える素材」にこだわりました。")
+                            ),
+                            // Quality
+                            React.createElement('div', { className: "text-center px-4" },
+                                React.createElement('div', { className: "w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6" }, React.createElement(ShieldCheck, { size: 32 })),
+                                React.createElement('h3', { className: "text-xl font-bold text-teal-900 mb-4" }, "徹底した品質管理"),
+                                React.createElement('p', { className: "text-slate-600 text-sm leading-relaxed" }, "国内GMP工場製造。原材料は西ノ島産のみ。第三者検査クリア。アレルギーリスクを最小化した植物性カプセルです。")
+                            )
+                        )
+                    )
+                ),
 
-            {/* Motherhood/Safety */}
-            <div className="text-center px-4 border-l border-r border-slate-100 md:border-x-0">
-              <div className="w-16 h-16 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Heart size={32} />
-              </div>
-              <h3 className="text-xl font-bold text-teal-900 mb-4">家族に安心して使える</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                添加物ゼロ・植物性カプセル。妊娠中・授乳中でも安心。「大切な家族に使える素材」にこだわりました。
-              </p>
-            </div>
+                // ■ 10. 【こだわり】Story
+                React.createElement('section', { className: "py-16 bg-slate-50" },
+                    React.createElement('div', { className: "container mx-auto px-4 max-w-3xl" },
+                        React.createElement('h2', { className: "text-center text-2xl font-bold text-slate-800 mb-8" }, "なぜ、ツルアラメなのか？"),
+                        React.createElement('div', { className: "bg-white p-8 rounded-xl shadow-sm leading-loose text-slate-700" },
+                            React.createElement('p', { className: "mb-6" }, "海藻研究チームが、“ツルアラメのポリフェノール含有量” に強いポテンシャルを発見しました。", React.createElement('br'), "しかしツルアラメは苦味が強く、食材として使われない海藻でした。"),
+                            React.createElement('p', { className: "mb-6 font-bold text-teal-800 text-lg" }, "「この価値を、家族の役に立つ形にできないか？」"),
+                            React.createElement('p', { className: "mb-6" }, "その思いから、加工・成分保持・飲みやすさを徹底的に研究。", React.createElement('br'), "素材の価値を壊さないように、", React.createElement('span', { className: "bg-yellow-100 px-1 font-bold" }, "余計なものを一切足さない処方"), "で仕上げました。")
+                        )
+                    )
+                ),
 
-            {/* Quality */}
-            <div className="text-center px-4">
-              <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <ShieldCheck size={32} />
-              </div>
-              <h3 className="text-xl font-bold text-teal-900 mb-4">徹底した品質管理</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                国内GMP工場製造。原材料は西ノ島産のみ。第三者検査クリア。アレルギーリスクを最小化した植物性カプセルです。
-              </p>
-            </div>
+                // ■ 11. 【希少性】Scarcity
+                React.createElement('section', { className: "py-12 bg-red-50 border-t border-b border-red-100" },
+                    React.createElement('div', { className: "container mx-auto px-4 max-w-3xl text-center" },
+                        React.createElement('div', { className: "flex items-center justify-center gap-2 text-red-600 font-bold mb-4" },
+                            React.createElement(AlertCircle, { size: 24 }),
+                            React.createElement('span', null, "重要なお知らせ")
+                        ),
+                        React.createElement('h2', { className: "text-2xl font-bold text-slate-800 mb-4" }, "数量に限りがあります"),
+                        React.createElement('p', { className: "text-slate-700 mb-6" },
+                            "ツルアラメは西ノ島でのみ採取可能な希少素材。季節・気候で収穫量が変動し、大量生産ができないため、供給量に限界があります。",
+                            React.createElement('br'),
+                            "また、通販限定・数量限定のため、", React.createElement('span', { className: "font-bold text-red-600" }, "在庫切れになる場合があります。")
+                        ),
+                        React.createElement('p', { className: "font-bold text-slate-800" }, "今シーズンをラクに過ごすために、必要な方はお早めにお求めください。")
+                    )
+                ),
 
-          </div>
-        </div>
-      </section>
+                // ■ CTA Footer
+                React.createElement('footer', { id: "cta", className: "py-16 md:py-24 bg-teal-900 text-center text-white relative" },
+                    React.createElement('div', { className: "container mx-auto px-4 max-w-3xl relative z-10" },
+                        React.createElement('h2', { className: "text-3xl md:text-4xl font-bold mb-8" }, "眠くならない、", React.createElement('br'), "家族思いの花粉対策"),
+                        React.createElement('div', { className: "bg-white text-slate-800 rounded-2xl p-8 mb-8 shadow-2xl" },
+                            React.createElement('p', { className: "text-lg font-bold mb-4" }, "ツルアラメ由来 機能性表示食品"),
+                            React.createElement('div', { className: "text-5xl font-bold text-teal-600 mb-2 font-mono" },
+                                "¥2,980", React.createElement('span', { className: "text-lg text-slate-500 font-normal ml-2" }, "（税込）")
+                            ),
+                            React.createElement('p', { className: "text-sm text-slate-500 mb-6" }, "約1ヶ月分（60粒入り） / 送料無料"),
+                            React.createElement('button', { className: "w-full bg-orange-500 hover:bg-orange-600 text-white text-xl md:text-2xl font-bold py-5 px-6 rounded-full shadow-lg transform transition hover:scale-105 mb-4" }, "今すぐ試してみる"),
+                            React.createElement('p', { className: "text-xs text-slate-400" }, "※いつでも解約可能・30日間返金保証付き")
+                        )
+                    ),
+                    React.createElement('div', { className: "absolute top-0 left-0 w-32 h-32 bg-white/5 rounded-full blur-2xl" }),
+                    React.createElement('div', { className: "absolute bottom-0 right-0 w-64 h-64 bg-teal-500/20 rounded-full blur-3xl" })
+                ),
 
-      {/* ■ 10. 【こだわり】Story */}
-      <section className="py-16 bg-slate-50">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-center text-2xl font-bold text-slate-800 mb-8">なぜ、ツルアラメなのか？</h2>
-          <div className="bg-white p-8 rounded-xl shadow-sm leading-loose text-slate-700">
-            <p className="mb-6">
-              海藻研究チームが、“ツルアラメのポリフェノール含有量” に強いポテンシャルを発見しました。<br/>
-              しかしツルアラメは苦味が強く、食材として使われない海藻でした。
-            </p>
-            <p className="mb-6 font-bold text-teal-800 text-lg">
-              「この価値を、家族の役に立つ形にできないか？」
-            </p>
-            <p className="mb-6">
-              その思いから、加工・成分保持・飲みやすさを徹底的に研究。<br/>
-              素材の価値を壊さないように、<span className="bg-yellow-100 px-1 font-bold">余計なものを一切足さない処方</span>で仕上げました。
-            </p>
-          </div>
-        </div>
-      </section>
+                // Copyright
+                React.createElement('div', { className: "bg-teal-950 text-teal-400 py-6 text-center text-xs" },
+                    React.createElement('p', null, "© 2024 Tsuruarame Project. All Rights Reserved.")
+                )
+            );
+        };
 
-      {/* ■ 11. 【希少性】Scarcity */}
-      <section className="py-12 bg-red-50 border-t border-b border-red-100">
-        <div className="container mx-auto px-4 max-w-3xl text-center">
-          <div className="flex items-center justify-center gap-2 text-red-600 font-bold mb-4">
-            <AlertCircle size={24} />
-            <span>重要なお知らせ</span>
-          </div>
-          <h2 className="text-2xl font-bold text-slate-800 mb-4">数量に限りがあります</h2>
-          <p className="text-slate-700 mb-6">
-            ツルアラメは西ノ島でのみ採取可能な希少素材。季節・気候で収穫量が変動し、大量生産ができないため、供給量に限界があります。<br/>
-            また、通販限定・数量限定のため、<span className="font-bold text-red-600">在庫切れになる場合があります。</span>
-          </p>
-          <p className="font-bold text-slate-800">
-            今シーズンをラクに過ごすために、必要な方はお早めにお求めください。
-          </p>
-        </div>
-      </section>
-
-      {/* ■ CTA Footer */}
-      <footer id="cta" className="py-16 md:py-24 bg-teal-900 text-center text-white relative">
-        <div className="container mx-auto px-4 max-w-3xl relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            眠くならない、<br/>家族思いの花粉対策
-          </h2>
-          <div className="bg-white text-slate-800 rounded-2xl p-8 mb-8 shadow-2xl">
-            <p className="text-lg font-bold mb-4">ツルアラメ由来 機能性表示食品</p>
-            <div className="text-5xl font-bold text-teal-600 mb-2 font-mono">
-              ¥2,980<span className="text-lg text-slate-500 font-normal ml-2">（税込）</span>
-            </div>
-            <p className="text-sm text-slate-500 mb-6">約1ヶ月分（60粒入り） / 送料無料</p>
-            
-            <button className="w-full bg-orange-500 hover:bg-orange-600 text-white text-xl md:text-2xl font-bold py-5 px-6 rounded-full shadow-lg transform transition hover:scale-105 mb-4">
-              今すぐ試してみる
-            </button>
-            <p className="text-xs text-slate-400">※いつでも解約可能・30日間返金保証付き</p>
-          </div>
-        </div>
-        
-        {/* Abstract background shapes */}
-        <div className="absolute top-0 left-0 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
-        <div className="absolute bottom-0 right-0 w-64 h-64 bg-teal-500/20 rounded-full blur-3xl"></div>
-      </footer>
-      
-      {/* Copyright */}
-      <div className="bg-teal-950 text-teal-400 py-6 text-center text-xs">
-        <p>© 2024 Tsuruarame Project. All Rights Reserved.</p>
-      </div>
-
-    </div>
-  );
-};
-
-export default App;
+        const root = createRoot(document.getElementById('root'));
+        root.render(React.createElement(App));
+    </script>
+</body>
+</html>
